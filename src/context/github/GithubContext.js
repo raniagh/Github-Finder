@@ -17,6 +17,7 @@ export const GithubProvider = ({ children }) => {
   /* const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true); */
 
+  //Get initial users (testing purposes)
   const fetchUsers = async () => {
     setLoading();
     const response = await fetch(`${GITHUB_URL}/users`, {
