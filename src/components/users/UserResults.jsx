@@ -12,7 +12,7 @@ function UserResults() {
         <ul>
           {users.map((user) => (
             <h3>
-              <UserItem user={user} />
+              <UserItem user={user} key={user.login} />
             </h3>
           ))}
         </ul>
